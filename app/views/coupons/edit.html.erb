@@ -1,0 +1,14 @@
+<h2>Edit Coupon Form</h2>
+<%= form_for @coupon do |coupon|%>
+
+<coupon.label for="coupon_code">Coupon Code</label>
+<input type= "text" id="coupon_code" name="coupon_code" value="<%=@coupon.coupon_code%>">
+
+<coupon.label for="store">Store</label>
+<input type= "text" id="store" name="store"/ value="<%=@coupon.store%>">
+
+<!--<input type="submit" value="Update Coupon">-->
+
+<%= coupon.submit "Submit Coupon" %>
+
+<% end %>

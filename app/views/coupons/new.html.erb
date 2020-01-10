@@ -1,0 +1,12 @@
+<h2>Coupon Form</h2>
+<%= form_tag ('/coupons') do %>
+
+<label for="coupon_code">Coupon Code</label>
+<input type= "text" id="coupon_code" name="coupon[coupon_code]"/>
+
+<label for="store">Store</label>
+<input type= "text" id="store" name="coupon[store]"/>
+
+<input type="submit" value="Submit Coupon">
+
+<% end %>
